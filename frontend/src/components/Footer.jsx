@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
+import logo from "../images/logo.png";
 
 const Footer = () => {
   return (
@@ -51,7 +52,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-logo">
-          <img src="./images/logo.png" alt="LegalAid Logo" />
+        <img src={logo} alt="LegalAid Logo" className="logo" />
           <div className="social-icons">
             <a href="#">
               <FaFacebook />

@@ -1,0 +1,119 @@
+.assistencia-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.assistencia-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a3b5d;
+    color: white;
+}
+
+.assistencia-header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.assistencia-header .assistencia-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.assistencia-header .assistencia-nav input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.assistencia-header .assistencia-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.assistencia-header .assistencia-nav a:hover {
+    text-decoration: underline;
+}
+
+.assistencia-main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.assistencia-main h1 {
+    font-size: 28px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+}
+
+.assistencia-form section {
+    margin-bottom: 20px;
+}
+
+.assistencia-form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.assistencia-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.checkbox-group label, .radio-group label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.availability {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button {
+    background-color: #1a3b5d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #16496f;
+}
+
+.assistencia-footer {
+    background-color: #1a3b5d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.assistencia-footer div {
+    font-size: 14px;
+}

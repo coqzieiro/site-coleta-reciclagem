@@ -1,0 +1,131 @@
+.home-container {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f7f9fc;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-content .services span {
+    display: inline-block;
+    background-color: #ffeedd;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-container {
+    background-color: #1a3b5d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container form button:hover {
+    background-color: #d48a00;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.stats div {
+    flex: 1;
+}
+
+.stats h3 {
+    font-size: 24px;
+    color: #1a3b5d;
+}
+
+.stats p {
+    font-size: 16px;
+    color: #666;
+}
+
+.services {
+    padding: 50px;
+    background-color: #fff7e6;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-list div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}  

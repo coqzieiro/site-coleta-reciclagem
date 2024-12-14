@@ -13,8 +13,6 @@ import hisenseLogo from "../images/hisense.png";
 import olxLogo from "../images/olx.png";
 import sorrisoLogo from "../images/sorriso.png";
 import woofinLogo from "../images/woofin.png";
-import assistencia from "../images/assistencia.jpeg";
-
 
 const Home = () => {
   return (
@@ -56,32 +54,81 @@ const Home = () => {
       </section>
 
       <section className="stats">
-        <div>
-          <h3>170,000+</h3>
-          <p>Clientes confiáveis</p>
-        </div>
-        <div>
-          <h3>N200 B</h3>
-          <p>Recuperado</p>
-        </div>
-        <div>
-          <h3>99%</h3>
-          <p>Casos de sucesso</p>
-        </div>
-        <div>
-          <h3>11</h3>
-          <p>Casos de injúria</p>
+        <h2 className="stats-title">Cada cliente é importante</h2>
+        <p className="stats-subtitle">
+          Priorizamos todos os casos e mantemos nossos clientes seguros.
+        </p>
+        <div className="stats-grid">
+          <div className="stats-item">
+            <div className="stats-icon stats-icon-green"></div>
+            <h3>170,000+</h3>
+            <p>Clientes confiáveis</p>
+          </div>
+          <div className="stats-item">
+            <div className="stats-icon stats-icon-blue"></div>
+            <h3>N200 B</h3>
+            <p>Recuperado</p>
+          </div>
+          <div className="stats-item">
+            <div className="stats-icon stats-icon-orange"></div>
+            <h3>99%</h3>
+            <p>Casos de sucesso</p>
+          </div>
+          <div className="stats-item">
+            <div className="stats-icon stats-icon-purple"></div>
+            <h3>11</h3>
+            <p>Casos de injúria</p>
+          </div>
         </div>
       </section>
 
       <section className="services">
-        <h2>Serviços que oferecemos</h2>
-        <p>Oferecemos uma ampla gama de serviços aos nossos clientes...</p>
-        <div className="services-list">
-          <div>Fraudes ou enganos</div>
-          <div>Crimes federais de drogas</div>
-          <div>Fiança e Mandados</div>
-          <div>Crimes relacionados ao trânsito</div>
+        <h2 className="services-title">Serviços que oferecemos</h2>
+        <p className="services-subtitle">
+          Oferecemos uma ampla gama de serviços aos nossos clientes e vamos o
+          comprimento extra para ter certeza a justiça é feita.
+        </p>
+        <div className="services-grid">
+          <div className="service-item">
+            <div className="service-icon">
+              <i className="fas fa-exclamation-circle"></i>
+            </div>
+            <h3>Fraudes ou enganos</h3>
+            <p>
+              Atendemos clientes com solicitações de fraude e os ajudamos em
+              recuperar seu dinheiro e propriedades.
+            </p>
+          </div>
+          <div className="service-item">
+            <div className="service-icon">
+              <i className="fas fa-prescription-bottle-alt"></i>
+            </div>
+            <h3>Crimes federais de drogas</h3>
+            <p>
+              Atendemos clientes com solicitações de crimes de drogas e os ajudamos
+              em levá-los de volta para sua casa e entes queridos.
+            </p>
+          </div>
+          <div className="service-item">
+            <div className="service-icon">
+              <i className="fas fa-gavel"></i>
+            </div>
+            <h3>Fiança e Mandados</h3>
+            <p>
+              Atendemos clientes com pedidos de fiança e os ajudamos em levá-los de
+              volta para sua casa e entes queridos.
+            </p>
+          </div>
+          <div className="service-item">
+            <div className="service-icon">
+              <i className="fas fa-car"></i>
+            </div>
+            <h3>Crimes relacionados ao trânsito</h3>
+            <p>
+              Atendemos clientes com solicitações relacionadas ao tráfego e os
+              ajudamos em obter sua licença de volta.
+            </p>
+          </div>
         </div>
       </section>
 

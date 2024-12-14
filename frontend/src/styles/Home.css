@@ -112,30 +112,76 @@
     text-decoration: underline;
 }
 
-
 /* Stats Section */
 .stats {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: #ffffff;
     text-align: center;
+    padding: 3rem 1.5rem;
+    background-color: #f9fbfc;
 }
 
-.stats div {
-    flex: 1;
-    padding: 0 10px;
+.stats-title {
+    font-size: 2rem;
+    color: #23374d;
+    margin-bottom: 0.5rem;
+}
+
+.stats-subtitle {
+    font-size: 1rem;
+    color: #6b7c93;
+    margin-bottom: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.icon-green {
+    color: #27ae60;
+    font-size: 2rem;
+}
+
+.icon-blue {
+    color: #3498db;
+    font-size: 2rem;
+}
+
+.icon-orange {
+    color: #e67e22;
+    font-size: 2rem;
+}
+
+.icon-purple {
+    color: #9b59b6;
+    font-size: 2rem;
 }
 
 .stats h3 {
-    font-size: 24px;
-    color: #1a3b5d;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #23374d;
+    margin-bottom: 0.5rem;
 }
 
 .stats p {
-    font-size: 16px;
-    color: #666;
+    font-size: 1rem;
+    color: #6b7c93;
 }
 
 /* Services Section */
@@ -145,43 +191,57 @@
     text-align: center;
 }
 
-.services h2 {
+.services-title {
     font-size: 28px;
     color: #1a3b5d;
     margin-bottom: 20px;
 }
 
-.services p {
+.services-subtitle {
     font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.services-list {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
 
-.services-list div {
+.service-item {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    flex: 1;
-    margin: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #1a3b5d;
     transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
 }
 
-.services-list div:hover {
+.service-item:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
-}  
+}
 
+.service-icon {
+    font-size: 30px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    color: #1a3b5d;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+  
 /* Sponsors Carousel */
 .sponsors-carousel {
     padding: 30px 20px; 

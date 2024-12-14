@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Header.css";
 import logo from "../images/logo.png";
+import "../styles/Home.css";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav className="header-nav">
-          <a href="#" className="nav-item active">Início</a>
+          <a href="/" className="nav-item active">Início</a>
           <a href="/assistencia" className="nav-item">Assistência Jurídica</a>
           <a href="/contato" className="nav-item">Contato</a>
         </nav>

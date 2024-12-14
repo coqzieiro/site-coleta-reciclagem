@@ -2,9 +2,9 @@
     display: flex;
     height: 100vh;
     font-family: Arial, sans-serif;
-}
-
-.cadastro-left {
+  }
+  
+  .cadastro-left {
     flex: 1;
     background-color: #1a3b5d;
     color: white;
@@ -12,15 +12,15 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-}
-
-.cadastro-quote {
+  }
+  
+  .cadastro-quote {
     font-size: 24px;
     line-height: 1.5;
     text-align: center;
-}
-
-.cadastro-right {
+  }
+  
+  .cadastro-right {
     flex: 1;
     background-color: #f9f9f9;
     display: flex;
@@ -28,9 +28,9 @@
     align-items: center;
     flex-direction: column;
     padding: 20px;
-}
-
-.cadastro-step {
+  }
+  
+  .cadastro-step {
     width: 100%;
     max-width: 400px;
     background-color: white;
@@ -38,77 +38,196 @@
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.cadastro-step h2 {
+  }
+  
+  .cadastro-step h2 {
     font-size: 22px;
     color: #1a3b5d;
     margin-bottom: 20px;
-}
-
-.cadastro-step p {
+  }
+  
+  .cadastro-step p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
-}
-
-.cadastro-step button {
+  }
+  
+  .cadastro-step .account-type-buttons button {
     width: 100%;
-    padding: 10px 15px;
-    margin-bottom: 10px;
+    padding: 12px;
     font-size: 16px;
     color: white;
     background-color: #1a3b5d;
     border: none;
     border-radius: 5px;
+    margin-bottom: 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     transition: background-color 0.3s;
-}
-
-.cadastro-step button:hover {
+  }
+  
+  .cadastro-step .account-type-buttons button i {
+    font-size: 18px;
+  }
+  
+  .cadastro-step .account-type-buttons button:hover {
     background-color: #16496f;
-}
-
-.cadastro-step form {
+  }
+  
+  .cadastro-step form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-
-.cadastro-step form input,
-.cadastro-step form select {
+  }
+  
+  .cadastro-step form input,
+  .cadastro-step form select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-.cadastro-step form label {
+  }
+  
+  .cadastro-step form .phone-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cadastro-step form .phone-input span {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .cadastro-step form label {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
     color: #666;
-}
-
-.cadastro-step form .phone-input {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.cadastro-step form .phone-input span {
-    background-color: #e6e6e6;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.cadastro-step .voltar {
+  }
+  
+  .cadastro-step .voltar {
     background-color: transparent;
     color: #1a3b5d;
     border: none;
     font-size: 16px;
     margin-bottom: 20px;
     cursor: pointer;
+  }
+  
+  .cadastro-step .voltar:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botão Principal */
+.cadastro-step button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #1a3b5d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover e Ativo */
+  .cadastro-step button[type="submit"]:hover {
+    background-color: #16496f;
+  }
+  
+  .cadastro-step button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  .cadastro-left {
+    flex: 1;
+    position: relative;
+    background-color: #1a3b5d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .cadastro-left img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    opacity: 0.1; /* Define a transparência */
+    z-index: 1;
+  }
+  
+  .cadastro-quote {
+    position: relative;
+    z-index: 2; /* Mantém o texto acima da imagem */
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #1a3b5d;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
 }
+
+.styled-checkbox:checked + .custom-checkbox {
+    background-color: #1a3b5d; 
+    border-color: #1a3b5d;
+}
+
+.account-type-buttons button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a3b5d;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-type-buttons button:hover {
+    background-color: #16496f;
+  }
+  
+  .account-type-buttons button i {
+    margin-right: 10px;
+  }
+  
+  .cadastro-step .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .cadastro-step .phone-input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  

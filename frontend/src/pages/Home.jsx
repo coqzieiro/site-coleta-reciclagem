@@ -45,9 +45,10 @@ const Home = () => {
             <input type="email" placeholder="Email" required />
             <input type="tel" placeholder="Celular" required />
             <select required>
-              <option value="">Assunto</option>
+              <option value="">-</option>
               <option value="pensão">Pensão</option>
               <option value="contrato">Contrato</option>
+              <option value="familiar">Familiar</option>
             </select>
             <textarea placeholder="Informações adicionais"></textarea>
             <p className="form-disclaimer">

@@ -11,7 +11,7 @@ const Login = () => {
       <div className="login-container">
         <div className="login-left">
           <div className="login-quote">
-            <h1>A poucos cliques de ingressar a maior rede de Especialistas Jurídicos</h1>
+            <h1>"Faça parte do LegalAid, uma comunidade que se solidariza com o seu problema!"</h1>
           </div>
         </div>
         <div className="login-right">

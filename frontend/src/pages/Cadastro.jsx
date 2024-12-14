@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Cadastro.css";
+import "../styles/Main.css";
 
 const Cadastro = () => {
   const [step, setStep] = useState(1);

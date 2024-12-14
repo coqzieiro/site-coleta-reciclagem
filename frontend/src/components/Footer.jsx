@@ -1,73 +1,77 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
-import logo from "../images/logo.png";
+import logo from "../images/logo2.png";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section">
-          <h3>Home</h3>
-          <ul>
-            <li>Empregos/Casos</li>
-            <li>Solicitações</li>
-            <li>Prêmio</li>
-            <li>Mensagens</li>
-          </ul>
+      <div className="social-icons">
+        <img src={logo} alt="LegalAid Logo" className="logo" />
+
+          <a href="#" aria-label="Facebook" title="Facebook">
+            <FaFacebook />
+          </a>
+          <a href="#" aria-label="Twitter" title="Twitter">
+            <FaTwitter />
+          </a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">
+            <FaLinkedin />
+          </a>
+          <a href="#" aria-label="Instagram" title="Instagram">
+            <FaInstagram />
+          </a>
         </div>
-        <div className="footer-section">
-          <h3>Perfil</h3>
-          <ul>
-            <li>Editar perfil</li>
-            <li>Meu perfil</li>
-            <li>Quem viu</li>
-          </ul>
+        <div className="footer-logo-section">          
+          <div className="vertical-line"></div>
         </div>
-        <div className="footer-section">
-          <h3>Comunidade</h3>
-          <ul>
-            <li>Adicionar contatos</li>
-            <li>Pessoas que você conhece</li>
-            <li>Recomendações</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3>Interesses</h3>
-          <ul>
-            <li>Empresas</li>
-            <li>Grupos</li>
-            <li>Eventos</li>
-            <li>Aprendizagem</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3>Serviços Jurídicos</h3>
-          <ul>
-            <li>Fraudes ou enganos</li>
-            <li>Direito da família</li>
-            <li>Direito do Negócio</li>
-          </ul>
+        <div className="footer-links">
+          <div className="footer-section">
+            <h3><a href="#">Home</a></h3>
+            <ul>
+              <li><a href="#">Empregos/Casos</a></li>
+              <li><a href="#">Solicitações</a></li>
+              <li><a href="#">Prêmio</a></li>
+              <li><a href="#">Mensagens</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3><a href="#">Perfil</a></h3>
+            <ul>
+              <li><a href="#">Editar perfil</a></li>
+              <li><a href="#">Meu perfil</a></li>
+              <li><a href="#">Quem viu</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3><a href="#">Comunidade</a></h3>
+            <ul>
+              <li><a href="#">Adicionar contatos</a></li>
+              <li><a href="#">Pessoas que você conhece</a></li>
+              <li><a href="#">Recomendações</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3><a href="#">Interesses</a></h3>
+            <ul>
+              <li><a href="#">Empresas</a></li>
+              <li><a href="#">Grupos</a></li>
+              <li><a href="#">Eventos</a></li>
+              <li><a href="#">Aprendizagem</a></li>
+            </ul>
+          </div>
+          <div className="footer-section">
+            <h3><a href="#">Serviços Jurídicos</a></h3>
+            <ul>
+              <li><a href="#">Fraudes ou enganos</a></li>
+              <li><a href="#">Direito da família</a></li>
+              <li><a href="#">Direito do Negócio</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <div className="footer-logo">
-        <img src={logo} alt="LegalAid Logo" className="logo" />
-          <div className="social-icons">
-            <a href="#">
-              <FaFacebook />
-            </a>
-            <a href="#">
-              <FaTwitter />
-            </a>
-            <a href="#">
-              <FaLinkedin />
-            </a>
-            <a href="#">
-              <FaInstagram />
-            </a>
-          </div>
-        </div>
         <p>Copyright LegalAid 2024</p>
       </div>
     </footer>

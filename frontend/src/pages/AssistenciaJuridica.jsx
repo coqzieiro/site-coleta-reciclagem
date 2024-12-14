@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Assistencia.css";
+import "../styles/Main.css";
 
 const AssistenciaJuridica = () => {
   return (

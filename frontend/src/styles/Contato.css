@@ -1,0 +1,126 @@
+.contato-container {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .contato-hero {
+    background-color: #f9fbfc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contato-title {
+    font-size: 36px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+  }
+  
+  .contato-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Form Section */
+  .contato-form-section {
+    padding: 40px 20px;
+    background-color: #fff7e6;
+    text-align: center;
+  }
+  
+  .contato-form-title {
+    font-size: 28px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+  }
+  
+  .contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #1a3b5d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #16496f;
+  }
+  
+  /* Infos Section */
+  .contato-infos {
+    padding: 40px 20px;
+    background-color: #f9fbfc;
+    text-align: center;
+  }
+  
+  .infos-title {
+    font-size: 28px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+  }
+  
+  .infos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .info-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .info-item h3 {
+    font-size: 16px;
+    color: #1a3b5d;
+    margin-bottom: 10px;
+  }
+  
+  .info-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .infos-grid {
+      grid-template-columns: 1fr;
+    }
+  }  

@@ -3,6 +3,7 @@ import React from 'react';
 import Home from './pages/Home.jsx';
 import Login from './pages/Login.jsx';
 import Cadastro from './pages/Cadastro.jsx';
+import Contato from './pages/Contato.jsx';
 import Assistencia from './pages/AssistenciaJuridica.jsx';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/login" element={<Login />} /> 
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/assistencia" element={<Assistencia />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
     </Router>
   );

@@ -13,7 +13,7 @@ const AssistenciaJuridica = () => {
           {/* Pergunta 1 */}
           <section>
             <label>1. Qual é a sua principal dúvida ou necessidade jurídica?</label>
-            <p>Em menos de 500 palavras, descreva a sua necessidade sobre alguma questão jurídica</p>
+            <p>Descreva a sua necessidade sobre alguma questão jurídica</p>
             <textarea
               placeholder="Escreva alguma coisa..."
               rows="5"

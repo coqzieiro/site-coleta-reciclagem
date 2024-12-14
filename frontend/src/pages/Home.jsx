@@ -7,12 +7,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../styles/Home.css";
+import "../styles/Main.css";
 
 import gtpLogo from "../images/gtp.png";
 import hisenseLogo from "../images/hisense.png";
 import olxLogo from "../images/olx.png";
 import sorrisoLogo from "../images/sorriso.png";
 import woofinLogo from "../images/woofin.png";
+
+import pedro from "../images/pedro-ibanez.jpeg";
+import raymond from "../images/raymond.jpg";
+import yuli from "../images/yuli.jpg";
 
 const Home = () => {
   return (
@@ -79,6 +84,51 @@ const Home = () => {
             <h3>11</h3>
             <p>Casos de injúria</p>
           </div>
+        </div>
+      </section>
+
+      <section className="testimonials-section">
+        <h2 className="testimonials-title">O que nossos clientes estão dizendo?</h2>
+        <div className="testimonials-carousel">
+          <div className="testimonial-card">
+            <p>
+              Nossa equipe trabalha na frispes há quase 2 meses porque nosso escritório ainda está fechado.
+              Durante o trabalho no frispes, sentimos uma nova experiência, podemos sentir trabalhar com um
+              espaço bonito, moderno e confortável. E café aconchegante com internet de alta velocidade lá.
+              Obrigado por frispes e equipe.
+            </p>
+            <img src={pedro} alt="Pedro Ibanez" className="author-photo" />
+            <div className="testimonial-author">
+              <h4>Pedro Ibanez</h4>
+              <span>UI Designer no Google</span>
+            </div>
+          </div>
+
+          <div className="testimonial-card">
+            <p>
+              A internet de alta velocidade nos frispes era tão incrível. Posso obter a melhor experiência ao
+              fazer videochamadas com meus clientes. Frispes tem uma área de estacionamento espaçosa e segura,
+              é disso que eu preciso porque trabalhei como freelancer por muito tempo.
+            </p>
+            <img src={raymond} alt="Raymond Thual" className="author-photo" />
+            <div className="testimonial-author">
+              <h4>Raymond Thual</h4>
+              <span>Freelancer Profissional</span>
+            </div>
+          </div>
+
+          <div className="testimonial-card">
+            <p>Apenas três palavras: Frispes é incrível!</p>
+            <img src={yuli} alt="Yuli Berlian" className="author-photo" />
+            <div className="testimonial-author">
+              <h4>Yuli Berlian</h4>
+              <span>IOS Dev na Tokopedia</span>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-navigation">
+          <button className="nav-button prev">&larr;</button>
+          <button className="nav-button next">&rarr;</button>
         </div>
       </section>
 

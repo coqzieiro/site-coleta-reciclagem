@@ -1,14 +1,19 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
-import logo from "../images/logo2.png";
+import logo2 from "../images/logo2.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
       <div className="social-icons">
-        <img src={logo} alt="LegalAid Logo" className="logo" />
+          <div className="footer-logo">
+            <Link to="/">
+              <img src={logo2} alt="LegalAid Logo" className="logo" />
+            </Link>
+          </div>
 
           <a href="#" aria-label="Facebook" title="Facebook">
             <FaFacebook />

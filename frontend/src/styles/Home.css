@@ -2,48 +2,65 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-    background-color: #f7f9fc;
+    align-items: center;
+    padding: 60px;
+    background-color: #fdd1a5;
 }
 
 .hero-content {
     max-width: 50%;
 }
 
-.hero-content h1 {
-    font-size: 36px;
-    color: #1a3b5d;
-    margin-bottom: 20px;
+.hero-subtitle {
+    font-size: 16px;
+    color: #ff6600;
+    margin-bottom: 10px;
 }
 
-.hero-content p {
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a3b5d; /* Azul Escuro */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-description {
     font-size: 18px;
-    color: #333;
-    margin-bottom: 20px;
+    color: #333333;
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-.hero-content .services span {
+.services-tags span {
     display: inline-block;
-    background-color: #ffeedd;
-    padding: 5px 10px;
-    margin-right: 10px;
-    border-radius: 5px;
+    margin-right: 15px;
+    padding: 8px 12px;
     font-size: 14px;
+    font-weight: bold;
+    color: #1a3b5d;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Container */
 .form-container {
-    background-color: #1a3b5d;
+    background-color: #1a3b5d; /* Azul Escuro */
     color: white;
-    padding: 20px;
+    padding: 40px 30px;
     border-radius: 10px;
+    width: 400px;
 }
 
 .form-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form-container form {
@@ -61,10 +78,14 @@
     border-radius: 5px;
 }
 
+.form-container form textarea {
+    height: 80px;
+}
+
 .form-container form button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    background-color: #f0a500;
+    background-color: #ff6600;
     color: white;
     border: none;
     border-radius: 5px;
@@ -73,9 +94,26 @@
 }
 
 .form-container form button:hover {
-    background-color: #d48a00;
+    background-color: #e65c00; 
 }
 
+.form-disclaimer {
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    }
+
+.form-disclaimer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.form-disclaimer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Stats Section */
 .stats {
     display: flex;
     justify-content: space-between;
@@ -86,11 +124,13 @@
 
 .stats div {
     flex: 1;
+    padding: 0 10px;
 }
 
 .stats h3 {
     font-size: 24px;
     color: #1a3b5d;
+    margin-bottom: 10px;
 }
 
 .stats p {
@@ -98,6 +138,7 @@
     color: #666;
 }
 
+/* Services Section */
 .services {
     padding: 50px;
     background-color: #fff7e6;
@@ -119,6 +160,7 @@
 .services-list {
     display: flex;
     justify-content: space-around;
+    gap: 15px;
 }
 
 .services-list div {
@@ -128,4 +170,43 @@
     flex: 1;
     margin: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a3b5d;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }  
+
+/* Sponsors Carousel */
+.sponsors-carousel {
+    padding: 30px 20px; 
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+.sponsors-carousel h2 {
+    font-size: 28px;
+    color: #1a3b5d;
+    margin-bottom: 20px;
+}
+
+.swiper-container {
+padding: 10px 0;
+}
+
+.sponsor-logo {
+    width: 120px; 
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.1);
+}

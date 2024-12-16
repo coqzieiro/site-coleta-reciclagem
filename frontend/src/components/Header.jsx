@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Navigation Links */}
+        {/* Links de Navegação */}
         <nav className="header-nav">
           <Link to="/" className="nav-item">
             Início
@@ -30,7 +30,7 @@ const Header = () => {
           )}
           {user && user.user_type === "Cliente" && (
             <Link to="/visualizar" className="nav-item">
-              Assistência Jurídica
+              Casos Jurídicos
             </Link>
           )}
           {user && user.user_type === "Advogado" && (
@@ -41,7 +41,7 @@ const Header = () => {
             </Link>
         </nav>
 
-        {/* Action Buttons */}
+        {/* Botões de Ações */}
         <div className="header-actions">
            {!user &&  <Link to="/login" className="action-link">Entrar</Link>}
             {!user && <Link to="/cadastro" className="action-button">Cadastrar</Link>}

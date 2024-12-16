@@ -11,7 +11,7 @@ No desenvolvimento do sistema, utilizamos o Django como framework para o backend
 
 No frontend, utilizamos uma combinação de tecnologias modernas para garantir uma interface interativa e de fácil uso. O Node.js foi empregado para gerenciar dependências e criar um ambiente de desenvolvimento eficiente, enquanto o CSS foi utilizado para estilização e criação de um design responsivo, garantindo que o sistema seja acessível em diferentes dispositivos, como computadores, tablets e smartphones. O JavaScript foi responsável por implementar a interatividade do site, como validação de formulários, envio de dados para o backend de forma dinâmica (AJAX) e outras funcionalidades que melhoram a experiência do usuário. Essa combinação de ferramentas permitiu a construção de um sistema funcional, intuitivo e escalável, adequado para os objetivos do projeto.
 
-## Especificação de Requisitos
+# Especificação de Requisitos
 
 ### Componentes Explícitos do Sistema
 Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes componentes explícitos:
@@ -42,7 +42,7 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
   - UC005: Responder Dúvidas no Fórum  
   - UC006: Aumentar Reputação/Ranking  
 
-## Arquitetura do Sistema
+# Arquitetura do Sistema
 
 ### Componentes Implícitos do Sistema
 - **Sistema de Login/Autenticação:**  

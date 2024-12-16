@@ -163,8 +163,5 @@ A estrutura do projeto segue um framework de desenvolvimento organizado:
 
 ### 7.4. Explicação do Código Correspondente aos Casos de Uso Desenvolvidos
 
-
-
-
-
+## 8. DISCUSSÕES
 

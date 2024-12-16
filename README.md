@@ -73,31 +73,14 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 ## 5. Modelo de Comportamento
 
 ### 5.1. UC - Fazer Postagem no Fórum
-- **Descrição**: Permite que um usuário publique uma pergunta ou dúvida no fórum.  
-- **Fluxo Básico**:
-  1. O usuário acessa a página do fórum.
-  2. Insere o conteúdo da postagem.
-  3. Confirma a publicação.  
-- **Fluxo Alternativo**:
-  - Se o conteúdo da postagem não for válido, o sistema exibe uma mensagem de erro.
 
 ---
 
 ### 5.2. UC - Avaliar Advogado
-- **Descrição**: Permite que clientes avaliem os advogados após a conclusão de um caso.  
-- **Fluxo Básico**:
-  1. O cliente seleciona o advogado a ser avaliado.
-  2. Insere uma avaliação e feedback.
-  3. Envia a avaliação.
 
 ---
 
 ### 5.3. UC - Validar Caso Jurídico
-- **Descrição**: Verifica se o caso enviado pelo cliente está dentro dos requisitos para ser aceito.  
-- **Fluxo Básico**:
-  1. O advogado analisa o caso.
-  2. Confirma ou rejeita o caso no sistema.
-  3. O cliente é notificado sobre a decisão.
 
 ---
 

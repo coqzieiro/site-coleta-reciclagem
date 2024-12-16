@@ -56,3 +56,10 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 - **Sistema de Gestão de Filas de Espera:**  
   Necessário para gerenciar os casos onde não há advogados disponíveis imediatamente, conforme descrito no fluxo alternativo do UC001.
+
+### Diagrama de Arquitetura
+
+
+
+
+

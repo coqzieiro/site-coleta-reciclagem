@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/Login.css";
 import "../styles/Main.css";
 import google from "../images/google-icon.png";
 import Header from "../components/Header";
+import { AuthContext } from "../authContext";
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +14,8 @@ const Login = () => {
   });
   const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+    const {login} = useContext(AuthContext)
+     const navigate = useNavigate()
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -41,6 +46,8 @@ const Login = () => {
              throw new Error(errorMessage);
          }
       const responseData = await response.json();
+      login(responseData) // set user context
+      navigate("/") // redirect to home
       console.log("Login successful", responseData);
       // Handle success (e.g., redirect, set user context)
     } catch (err) {

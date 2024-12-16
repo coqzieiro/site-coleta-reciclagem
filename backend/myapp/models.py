@@ -18,17 +18,26 @@ class Advogado(Usuario):
     password = models.CharField(max_length=255)
     practice_license_number = models.CharField(max_length=50, blank=True, null=True)
 
-    def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith('pbkdf2_sha256'):
-          self.password = make_password(self.password)
-        super().save(*args, **kwargs)
-
 class Cliente(Usuario):
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=20, blank=True, null=True)
 
-    def save(self, *args, **kwargs):
-        if self.password and not self.password.startswith('pbkdf2_sha256'):
-          self.password = make_password(self.password)
-        super().save(*args, **kwargs)
+class Solicitacao(models.Model):
+    STATUS_CHOICES = [
+        ('pendente', 'Pendente'),
+        ('em_andamento', 'Em Andamento'),
+        ('concluida', 'Concluída'),
+    ]
+    idUsuarioSolicitador = models.IntegerField()
+    descricaoSolicitacao = models.TextField()
+    estadoSolicitacao = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pendente')
+    tipoProblema = models.CharField(max_length=255, blank=True, null=True)
+    envolve = models.CharField(max_length=255, blank=True, null=True)
+    processos = models.BooleanField(default=False)
+    urgencia = models.CharField(max_length=255, blank=True, null=True)
+    consultou = models.BooleanField(default=False)
+    disponibilidade = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Solicitação #{self.pk} de {self.idUsuarioSolicitador}"

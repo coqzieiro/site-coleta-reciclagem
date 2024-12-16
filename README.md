@@ -13,7 +13,9 @@ No frontend, utilizamos uma combinação de tecnologias modernas para garantir u
 
 ## 2. Especificação de Requisitos
 
-### Componentes Explícitos do Sistema
+## 3. Arquitetura do Sistema
+
+### 3.1 Componentes Explícitos do Sistema
 Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes componentes explícitos:
 
 - **Componente de Assistência Jurídica**  
@@ -30,7 +32,7 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 - **Componente de Reputação e Ranking**  
   - UC006: Aumentar Reputação/Ranking
 
-### Agrupamento dos Casos de Uso
+### 3.2. Agrupamento dos Casos de Uso
 - **Informações de Usuário:**  
   - UC001: Solicitar Assistência Jurídica  
   - UC003: Avaliar Advogado
@@ -42,9 +44,8 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
   - UC005: Responder Dúvidas no Fórum  
   - UC006: Aumentar Reputação/Ranking  
 
-## 3. Arquitetura do Sistema
 
-### 3.1 Componentes Implícitos do Sistema
+### 3.3 Componentes Implícitos do Sistema
 - **Sistema de Login/Autenticação:**  
   Necessário para validar o acesso de advogados e clientes, garantindo que apenas usuários cadastrados possam acessar os serviços.
 
@@ -57,13 +58,13 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 - **Sistema de Gestão de Filas de Espera:**  
   Necessário para gerenciar os casos onde não há advogados disponíveis imediatamente, conforme descrito no fluxo alternativo do UC001.
 
-### 3.2 Diagrama de Arquitetura
+### 3.4 Diagrama de Arquitetura
 
 ![Diagrama de Arquitetura](images/diagrama-arquitetura.png)
 
 ## 4. Modelo de Classes
 
-> Diagrama e explicação do modelo de classes do sistema, incluindo a relação entre os componentes principais. (Se você tiver um diagrama, pode adicioná-lo como imagem aqui.)
+> Diagrama e explicação do modelo de classes do sistema, incluindo a relação entre os componentes principais.
 
 ![Modelo de Classes](images/modelo-classes.png)
 

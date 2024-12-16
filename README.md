@@ -166,9 +166,13 @@ A estrutura do projeto segue um framework de desenvolvimento organizado:
 ## 8. DISCUSSÕES
 
 Durante o desenvolvimento do projeto, enfrentamos diversos desafios que acabaram por nos proporcionar um rico aprendizado. Um dos principais obstáculos foi lidar com o framework Django, uma tecnologia totalmente nova para a equipe. No início, a falta de experiência com Django trouxe certa insegurança, mas, com dedicação, estudo e seguindo tutoriais detalhados, conseguimos superar as dificuldades iniciais. Gradualmente, fomos entendendo o funcionamento do framework e conseguimos integrá-lo de forma eficiente ao backend do sistema. Essa jornada foi fundamental para que adquiríssemos confiança na utilização de uma ferramenta robusta e versátil como o Django.
+
 Outro desafio significativo foi o desenvolvimento e configuração das rotas do frontend, garantindo uma integração fluida com o backend utilizando o Django. Essa tarefa exigiu não apenas compreensão das ferramentas, mas também a coordenação entre os membros da equipe para alinhar as interfaces com a lógica do sistema. Apesar das dificuldades, a persistência nos permitiu superar os obstáculos técnicos e criar um sistema coeso, funcional e bem estruturado.
+
 O uso do banco de dados SQLite também foi uma novidade para todos os integrantes do grupo. Embora seja uma solução leve e integrada, sua implementação exigiu atenção e um estudo cuidadoso, pois precisávamos entender não apenas sua estrutura, mas também como conectá-la corretamente ao Django. Felizmente, seguindo um passo a passo detalhado e explorando a documentação oficial, conseguimos configurar e utilizar o SQLite de forma eficiente no nosso projeto, o que nos deu uma visão prática sobre a gestão de dados em sistemas reais.
+
 O maior aprendizado, contudo, foi o trabalho em equipe. A colaboração eficiente foi a base para o sucesso do projeto. Desde o início, dividimos as tarefas de acordo com as aptidões e interesses de cada integrante. Cada um assumiu responsabilidades específicas, estudou as ferramentas necessárias e desenvolveu sua parte com dedicação. Quando chegou o momento de integrar os diferentes componentes do sistema, nos reunimos para explicar uns aos outros o que havíamos feito, alinhando as soluções e resolvendo possíveis conflitos de forma colaborativa. Essa experiência não apenas resultou em um sistema funcional, mas também fortaleceu nossa habilidade de comunicação, organização e trabalho em grupo.
+
 Em resumo, este projeto não apenas nos desafiou tecnicamente, mas também nos ensinou valiosas lições sobre resiliência, aprendizado autodirigido e cooperação. Esses aprendizados certamente nos acompanharão em futuros projetos e em nossas trajetórias profissionais.
 
 

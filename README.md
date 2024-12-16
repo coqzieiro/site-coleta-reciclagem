@@ -3,7 +3,7 @@ Desenvolvimento de um site para gerenciamento de casos jurídicos.
 
 ## Como Executar o Projeto?
 
-<h1>1. Frontend</h1>
+<h3>1. Frontend</h3>
 
 <code>npm install</code> : Instala as dependências do node.js
 

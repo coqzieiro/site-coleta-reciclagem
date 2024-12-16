@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="social-icons">
           <div className="footer-logo">
             <Link to="/">
-              <img src={logo2} alt="LegalAid Logo" className="logo" />
+              <img src={logo2} alt="Direito ao Direito Logo" className="logo" />
             </Link>
           </div>
 
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright LegalAid 2024</p>
+        <p>Copyright Direito ao Direito 2024</p>
       </div>
     </footer>
   );

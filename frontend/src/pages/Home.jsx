@@ -26,7 +26,7 @@ const Home = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h4 className="hero-subtitle">Direito</h4>
-          <h1 className="hero-title">LegalAid Sempre com você!</h1>
+          <h1 className="hero-title">Direito ao Direito Sempre com você!</h1>
           <p className="hero-description">
             Lideramos novas iniciativas e prestamos serviços jurídicos e orientação
             para advogados novos e antigos, e ajudar a aumentar suas oportunidades

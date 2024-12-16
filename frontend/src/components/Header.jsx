@@ -14,7 +14,7 @@ const Header = () => {
         {/* Logo */}
         <div className="header-logo">
           <Link to="/">
-            <img src={logo} alt="LegalAid Logo" className="logo" />
+            <img src={logo} alt="Direito ao Direito Logo" className="logo" />
           </Link>
         </div>
 

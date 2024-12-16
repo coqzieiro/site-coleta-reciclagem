@@ -48,7 +48,7 @@ const Contato = () => {
         <div className="infos-grid">
           <div className="info-item">
             <h3>Email</h3>
-            <p>contato@legalaid.com</p>
+            <p>contato@direito.com</p>
           </div>
           <div className="info-item">
             <h3>Telefone</h3>
@@ -56,7 +56,7 @@ const Contato = () => {
           </div>
           <div className="info-item">
             <h3>Redes Sociais</h3>
-            <p>@legalaid</p>
+            <p>@Direito ao Direito</p>
           </div>
         </div>
       </section>

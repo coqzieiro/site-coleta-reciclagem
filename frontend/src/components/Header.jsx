@@ -28,6 +28,11 @@ const Header = () => {
               Assistência Jurídica
             </Link>
           )}
+          {user && user.user_type === "Cliente" && (
+            <Link to="/visualizar" className="nav-item">
+              Assistência Jurídica
+            </Link>
+          )}
           {user && user.user_type === "Advogado" && (
               <span className="nav-item">Casos Disponíveis</span>
           )}

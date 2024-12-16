@@ -5,6 +5,7 @@ import Login from './pages/Login.jsx';
 import Cadastro from './pages/Cadastro.jsx';
 import Contato from './pages/Contato.jsx';
 import Assistencia from './pages/AssistenciaJuridica.jsx';
+import VisualizarAssistencia from './pages/VisualizarAssistencias.jsx';
 import { AuthProvider, AuthContext } from './authContext';
 import { useContext } from 'react';
 
@@ -27,6 +28,7 @@ function App() {
                   <Route path="/cadastro" element={<Cadastro />} />
                   <Route path="/contato" element={<Contato />} />
                   <Route path="/assistencia" element={<PrivateRoute><Assistencia /></PrivateRoute>} />
+                  <Route path="/visualizar" element={<PrivateRoute><VisualizarAssistencia /></PrivateRoute>} />
                 </Routes>
             </Router>
        </AuthProvider>

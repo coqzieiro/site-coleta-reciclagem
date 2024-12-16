@@ -134,43 +134,37 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 ### 7.1. Tecnologia Selecionada
 
 #### Framework de Desenvolvimento
-- **Backend**: Django, um framework robusto baseado em Python, que oferece:
-  - Suporte à programação orientada a objetos.
-  - Princípio DRY (Don't Repeat Yourself) para maior eficiência e segurança.
+- **Backend**: Utilizamos o Django, um framework robusto e de alto nível baseado em Python, que oferece suporte a programação orientada a objetos e segue o princípio DRY (Don't Repeat Yourself), otimizando o desenvolvimento e garantindo segurança e eficiência.
 
 - **Frontend**: 
-  - Node.js para gerenciamento de dependências.
-  - Bibliotecas adicionais para otimização da interface.
+ Implementamos o frontend com uma combinação de Node.js para gerenciamento de dependências e ambiente de desenvolvimento, e bibliotecas adicionais para otimização da interface.
 
 #### Linguagem de Programação Orientada a Objetos
-- **Python**: Utilizado no backend por sua clareza e modularidade.
+- **Python**: Foi utilizado no backend devido à sua clareza e suporte completo à orientação a objetos, facilitando a modularidade e a manutenção do código.
+
 
 #### Sistema de Gerenciamento de Banco de Dados Relacional
-- **SQLite**: Banco de dados leve e integrado ao Django, ideal para desenvolvimento e testes.
+- **SQLite**: Banco de Dados leve e integrada ao Django, ideal para o ambiente de desenvolvimento e testes. Ele é um banco de dados relacional que permite armazenar, consultar e gerenciar informações de maneira eficiente.
 
 #### Tecnologias e Ferramentas do Frontend
 - **HTML5**: Estruturação das páginas e integração com o backend.
-- **CSS**: Design responsivo e atraente.
-- **JavaScript**: Funcionalidades dinâmicas, como:
-  - Validação de formulários.
-  - Envio assíncrono de dados ao servidor (AJAX).
+- **CSS**: Utilizado para criar estilos responsivos e design atrativo, garantindo acessibilidade em dispositivos móveis e desktops.
+- **JavaScript**: Responsável por adicionar interatividade às páginas, validação de formulários e funcionalidades dinâmicas como envio assíncrono de dados ao servidor via AJAX.
 
 #### Arquitetura e Integração
-- **Padrão MVC (Model-View-Controller)**:
-  - **Model**: Lógica de negócios.
-  - **View**: Interações com o usuário.
-  - **Controller**: Controle das requisições.
-- **APIs RESTful**: Criadas no Django para comunicação eficiente entre cliente e servidor.
+-Arquitetura baseada no padrão MVC (Model-View-Controller), fornecido pelo Django, separando a lógica de negócios (Model), as interações com o usuário (View) e o controle das requisições (Controller).
+O frontend foi integrado ao backend por meio de APIs RESTful criadas no Django, garantindo uma comunicação eficiente entre cliente e servidor.
+
 
 #### Gerenciamento de Dependências e Ferramentas de Desenvolvimento
-- **Node.js**: Gerenciamento de pacotes e bibliotecas do frontend.
-- **Django Admin**: Gestão de dados como usuários, advogados e casos.
+- **Node.js**:  Utilizado para gerenciar bibliotecas e pacotes do frontend, otimizando o processo de desenvolvimento
+- **Django Admin**: Ferramenta interna do Django para gerenciar dados, como usuários, advogados e casos, de forma eficiente.
+
 
 #### Motivação das Escolhas Tecnológicas
-- **Django**: Escalabilidade e segurança.
-- **SQLite**: Simplicidade e facilidade de integração.
-- **HTML, CSS e JavaScript**: Design moderno e experiência fluida.
-- **Node.js**: Agilidade no desenvolvimento frontend.
+A escolha do Django foi baseada na necessidade de uma solução escalável e segura para gerenciar dados e usuários.
+O SQLite foi selecionado pela simplicidade e facilidade de integração com o Django.
+A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experiência do usuário fluida, enquanto o uso do Node.js trouxe agilidade no desenvolvimento frontend.
 
 ---
 

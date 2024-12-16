@@ -3,7 +3,7 @@ Desenvolvimento de um site para gerenciamento de casos jurídicos.
 
 ## Como Executar o Projeto?
 
-<h1>1. Frontend</h1>
+<h3>1. Frontend</h3>
 
 <code>npm install</code> : Instala as dependências do node.js
 
@@ -18,6 +18,16 @@ Desenvolvimento de um site para gerenciamento de casos jurídicos.
 <code>python3 manage.py runserver</code> : Executa o servidor localmente
 
 <code>deactivate</code> : Desativa o ambiente virtual em python
+
+<h3>3. Usuários</h3>
+
+*Cliente:*
+- email: fersuaiden@gmail.com
+- senha: fas123
+
+*Advogado:*
+- email: email@email.com
+- senha: fas123
 
 ## 1. Introdução
 

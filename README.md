@@ -1,15 +1,15 @@
 # System Direito ao Direito
 Desenvolvimento de um site para gerenciamento de casos jurídicos.
 
-## Como Executar o Projeto
+## Como Executar o Projeto?
 
-<h1>1. Frontend</h1>
+<h3>1. Frontend</h3>
 
 <code>npm install</code> : Instala as dependências do node.js
 
 <code>npm run dev</code> : Executa a interface do frontend localmente
 
-<h1>2. Backend</h1> 
+<h3>2. Backend</h3> 
 
 <code>source venv/bin/activate</code> : Ativa o ambiente virtual em python
 

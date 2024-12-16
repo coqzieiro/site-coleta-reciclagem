@@ -1,6 +1,24 @@
 # System Direito ao Direito
 Desenvolvimento de um site para gerenciamento de casos jurídicos.
 
+## Como Executar o Projeto?
+
+<h1>1. Frontend</h1>
+
+<code>npm install</code> : Instala as dependências do node.js
+
+<code>npm run dev</code> : Executa a interface do frontend localmente
+
+<h3>2. Backend</h3> 
+
+<code>source venv/bin/activate</code> : Ativa o ambiente virtual em python
+
+<code>pip install -r requirements.txt</code> : Instala as dependências do Django
+
+<code>python3 manage.py runserver</code> : Executa o servidor localmente
+
+<code>deactivate</code> : Desativa o ambiente virtual em python
+
 ## 1. Introdução
 
 O projeto visa desenvolver uma plataforma digital dedicada a oferecer assistência jurídica gratuita a pessoas de baixa renda em casos relacionados a direitos humanos, moradia e trabalho. O sistema conecta advogados voluntários a indivíduos que precisam de suporte legal, permitindo tanto a resolução de dúvidas em um fórum quanto a representação jurídica em casos "Pro Bono". O objetivo central é democratizar o acesso à justiça para aqueles que não podem pagar por serviços jurídicos, ao mesmo tempo em que oferece uma oportunidade para advogados recém-formados adquirirem experiência prática e para profissionais consolidados contribuírem para a sociedade.

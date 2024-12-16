@@ -128,6 +128,65 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 - **Diagrama de Interação**:  
   ![Interação - Avaliar Advogado](images/interacao-avaliar-advogado.png)
 
+## 7. Código do Sistema
+
+### 7.1. Tecnologia Selecionada
+
+#### Framework de Desenvolvimento
+- **Backend**: Django, um framework robusto baseado em Python, que oferece:
+  - Suporte à programação orientada a objetos.
+  - Princípio DRY (Don't Repeat Yourself) para maior eficiência e segurança.
+
+- **Frontend**: 
+  - Node.js para gerenciamento de dependências.
+  - Bibliotecas adicionais para otimização da interface.
+
+#### Linguagem de Programação Orientada a Objetos
+- **Python**: Utilizado no backend por sua clareza e modularidade.
+
+#### Sistema de Gerenciamento de Banco de Dados Relacional
+- **SQLite**: Banco de dados leve e integrado ao Django, ideal para desenvolvimento e testes.
+
+#### Tecnologias e Ferramentas do Frontend
+- **HTML5**: Estruturação das páginas e integração com o backend.
+- **CSS**: Design responsivo e atraente.
+- **JavaScript**: Funcionalidades dinâmicas, como:
+  - Validação de formulários.
+  - Envio assíncrono de dados ao servidor (AJAX).
+
+#### Arquitetura e Integração
+- **Padrão MVC (Model-View-Controller)**:
+  - **Model**: Lógica de negócios.
+  - **View**: Interações com o usuário.
+  - **Controller**: Controle das requisições.
+- **APIs RESTful**: Criadas no Django para comunicação eficiente entre cliente e servidor.
+
+#### Gerenciamento de Dependências e Ferramentas de Desenvolvimento
+- **Node.js**: Gerenciamento de pacotes e bibliotecas do frontend.
+- **Django Admin**: Gestão de dados como usuários, advogados e casos.
+
+#### Motivação das Escolhas Tecnológicas
+- **Django**: Escalabilidade e segurança.
+- **SQLite**: Simplicidade e facilidade de integração.
+- **HTML, CSS e JavaScript**: Design moderno e experiência fluida.
+- **Node.js**: Agilidade no desenvolvimento frontend.
+
+---
+
+### 7.2. Estrutura do Projeto
+A estrutura do projeto segue um framework de desenvolvimento organizado:
+
+---
+
+### 7.3. Link do Repositório
+- [GitHub do Projeto](https://github.com/coqzieiro/site-legal-aid)
+
+---
+
+### 7.4. Explicação do Código Correspondente aos Casos de Uso Desenvolvidos
+
+
+
 
 
 

@@ -194,9 +194,9 @@ A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experi
 
 ### 7.2. Estrutura do Projeto
 A estrutura do projeto segue um framework de desenvolvimento organizado:
-<img src="images/codigo1.jpeg" alt="Modelo de Classes" width="500"/>
+<img src="images/codigo1.jpeg" alt="Modelo de Classes" width="400"/>
 
-<img src="images/codigo2.jpeg" alt="Modelo de Classes" width="500"/>
+<img src="images/codigo2.jpeg" alt="Modelo de Classes" width="400"/>
 
 ---
 

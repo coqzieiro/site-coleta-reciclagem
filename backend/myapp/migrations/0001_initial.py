@@ -35,7 +35,6 @@ class Migration(migrations.Migration):
                 ('nota', models.FloatField(blank=True, null=True)),
                 ('email', models.EmailField(max_length=254, unique=True)),
                 ('password', models.CharField(max_length=255)),
-                ('phone_number', models.CharField(blank=True, max_length=20, null=True)),
             ],
             options={
                 'abstract': False,

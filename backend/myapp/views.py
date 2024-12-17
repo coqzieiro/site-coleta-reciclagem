@@ -55,7 +55,8 @@ def register_user(request):
             email = data.get('email')
             password = data.get('password')
             practice_license_number = data.get('practice_license_number', None)
-            phone_number = data.get('phone_number', None)
+            formacao = data.get('formacao', None) # Get formacao from the data
+            fichaCriminal = data.get('fichaCriminal', None) # Get fichaCriminal from the data
             hashed_password = make_password(password)
             if user_type == 'advogado':
                 if Advogado.objects.filter(email=email).exists():
@@ -65,7 +66,10 @@ def register_user(request):
                     email=email,
                     password=hashed_password,
                     practice_license_number=practice_license_number,
-                    )
+                    descricaoUsuario="Novo usuário do direito ao direito",
+                    nota = 5,
+                    formacao=formacao, # Pass formacao to create method
+                  )
             elif user_type == 'cliente':
                 if Cliente.objects.filter(email=email).exists():
                    return JsonResponse({'error': 'Email já cadastrado'}, status=400)
@@ -73,8 +77,10 @@ def register_user(request):
                     nomeUsuario = full_name,
                     email=email,
                     password=hashed_password,
-                    phone_number = phone_number,
-                    )
+                    descricaoUsuario="Novo usuário do direito ao direito",
+                     fichaCriminal=fichaCriminal, # Pass fichaCriminal to create method
+                    nota = 5,
+                  )
             else:
                 return JsonResponse({'error': 'Invalid user type'}, status=400)
 
@@ -94,8 +100,6 @@ def check_email(request):
                return JsonResponse({'exists': True}, status=200)
            else:
                return JsonResponse({'exists': False}, status=200)
-       else:
-           return JsonResponse({'error': 'Please provide an email'}, status=400)
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
 
@@ -109,20 +113,15 @@ def create_solicitacao(request):
             descricao = data.get('descricao')
             tipoProblema = data.get('tipoProblema')
             envolve = data.get('envolve')
-            processos = data.get('processos')
             urgencia = data.get('urgencia')
-            consultou = data.get('consultou')
-            disponibilidade = data.get('disponibilidade')
+            
 
             solicitacao = Solicitacao.objects.create(
                 idUsuarioSolicitador=user_id,
                 descricaoSolicitacao=descricao,
                 tipoProblema=tipoProblema,
                 envolve=envolve,
-                processos=processos,
                 urgencia=urgencia,
-                consultou=consultou,
-                disponibilidade=disponibilidade,
             )
             return JsonResponse({'message': 'Solicitação enviada com sucesso!', 'solicitacao_id': solicitacao.id}, status=201)
         except Exception as e:

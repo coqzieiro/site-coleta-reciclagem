@@ -81,11 +81,37 @@ No frontend, utilizamos uma combinação de tecnologias modernas para garantir u
 ### 2.2 Personas
 
 #### Clóvis – Advogado Voluntário  
-Clóvis, de 22 anos, recém-formado em Direito pela UFSCar, busca colocar seus conhecimentos em prática e contribuir com a comunidade. Com interesse em causas trabalhistas, ele vê no voluntariado a oportunidade de ajudar pessoas enquanto constrói sua reputação profissional.
+Clóvis, de 22 anos, nasceu e foi criado em São Carlos. Ele é um
+recém-formado do curso de Direito pela UFSCar, com objetivo de colocar em
+prática os conhecimentos adquiridos na faculdade. Participou da Enactus
+UFSCar durante sua graduação, de forma que entrou em contato com projetos
+sociais e encontrou realização fazendo trabalhos que impactam positivamente a
+comunidade. No início de sua carreira, ele busca ganhar experiência, aprimorar
+suas habilidades jurídicas e, ao mesmo tempo, devolver algo para a sociedade que
+investiu na sua formação.
+Clóvis tem interesse em causas trabalhistas, já que vê nessa área uma
+oportunidade de ajudar pessoas que durante seu tempo participando de projetos
+sociais, ele encontrou muitas pessoas que passavam por injustiças no trabalho
+por falta de suporte jurídico. Ele encontra no voluntariado uma oportunidade
+para atacar esse problema, enquanto aumenta sua reputação em sua área de
+atuação.
 
 
 #### Yuri Alberto – Jogador de Beach Tênis  
-Yuri, de 22 anos, atleta recém-contratado, enfrenta uma crise financeira devido à falta de pagamento por parte do clube. Sem recursos e com medo de confrontar o clube, Yuri busca auxílio jurídico para resolver sua situação com segurança.
+Yuri Alberto, também com 22 anos, é natural de Cuiabá e se mudou para
+São Carlos em busca de uma oportunidade de crescimento em sua carreira como
+jogador de beach tênis. Ele foi contratado pelo Grêmio Osaac para jogar pelo
+clube. Começou a jogar e estava bem, animado com a vida nova, contando
+alegremente para a mãe sobre como estava tudo indo bem e feliz com a nova fase
+da sua vida e o passo importante para a carreira de um atleta jovem. Porém, o
+clube começou a sofrer uma crise financeira e há dois meses não paga o salário do
+jogador.
+Como ele está em uma cidade nova e ainda se adaptando, Yuri não possui
+uma grande reserva financeira para lidar com essa situação. Ele se sente
+inseguro em confrontar o clube, com medo de perder a oportunidade de continuar
+jogando e, quem sabe, progredir na carreira. Essa situação o deixa ansioso e
+preocupado com suas perspectivas futuras, já que precisa do dinheiro para se
+manter na cidade.
 
 
 ### 2.3 Diagrama de Casos de Uso

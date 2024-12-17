@@ -89,7 +89,7 @@ Yuri, de 22 anos, atleta recém-contratado, enfrenta uma crise financeira devido
 
 
 ### 2.3 Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](images/diagram-UC.png)  
+![Diagrama de Casos de Uso](images/diagrama-UC.png)  
 
 
 ### 2.4 Especificação de Casos de Uso Textuais Abstratos

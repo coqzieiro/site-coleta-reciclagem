@@ -89,8 +89,7 @@ Yuri, de 22 anos, atleta recém-contratado, enfrenta uma crise financeira devido
 
 
 ### 2.3 Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](path/to/diagrama.png)  
-*(Adicione o caminho correto da imagem do diagrama aqui)*
+![Diagrama de Casos de Uso](images/diagram-UC.png)  
 
 
 ### 2.4 Especificação de Casos de Uso Textuais Abstratos
@@ -109,7 +108,6 @@ Yuri, de 22 anos, atleta recém-contratado, enfrenta uma crise financeira devido
 - **Cadastro de Usuário**: Usuários novos se cadastram informando dados básicos.
 - **Recuperação de Senha**: Usuários podem recuperar o acesso por meio de redefinição de senha.
 
----
 
 ## 3. Arquitetura do Sistema
 

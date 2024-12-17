@@ -130,28 +130,28 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 ### 6.1. UC - Fazer Postagem no Fórum
 - **Descrição**: Mostra como o sistema processa uma postagem no fórum.
 - **Diagrama de Interação**:  
-  ![Interação - Postagem no Fórum](images/interacao-postagem-forum.png)
+  ![Interação - Postagem no Fórum](images/modelo-comportamento1.png)
 
 ---
 
 ### 6.2. UC - Pedir Assistência Jurídica
 - **Descrição**: Representa o fluxo de interação entre cliente e advogado para solicitar assistência jurídica.
 - **Diagrama de Interação**:  
-  ![Interação - Assistência Jurídica](images/interacao-assistencia-juridica.png)
+   ![Interação - Postagem no Fórum](images/modelo-comportamento2.jpeg)
 
 ---
 
 ### 6.3. UC - Validar Caso Jurídico
 - **Descrição**: Explica o processo de validação de casos jurídicos enviados pelos clientes.
 - **Diagrama de Interação**:  
-  ![Interação - Validar Caso Jurídico](images/interacao-validar-caso-juridico.png)
+    ![Interação - Postagem no Fórum](images/modelo-comportamento3.jpeg)
 
 ---
 
 ### 6.4. UC - Avaliar Advogado
 - **Descrição**: Mostra como o cliente avalia um advogado e como o sistema processa essa avaliação.
 - **Diagrama de Interação**:  
-  ![Interação - Avaliar Advogado](images/interacao-avaliar-advogado.png)
+  ![Interação - Postagem no Fórum](images/modelo-comportamento4.png)
 
 ## 7. Código do Sistema
 
@@ -194,7 +194,8 @@ A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experi
 
 ### 7.2. Estrutura do Projeto
 A estrutura do projeto segue um framework de desenvolvimento organizado:
-
+  ![Estrutura do projeto](images/codigo1.jpeg)
+  ![Estrutura do projeto](images/codigo2.jpeg)
 ---
 
 ### 7.3. Link do Repositório

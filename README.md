@@ -194,11 +194,11 @@ A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experi
 
 ### 7.2. Estrutura do Projeto
 A estrutura do projeto segue um framework de desenvolvimento organizado: <br>
-<img src="images/codigo1.jpeg" alt="Modelo de Classes" width="400"/>
+<p align="center">
+  <img src="images/codigo1.jpeg" alt="Image 1" width="45%"/>
+  <img src="images/codigo2.jpeg" alt="Image 2" width="45%"/>
+</p>
 
-<img src="images/codigo2.jpeg" alt="Modelo de Classes" width="400"/>
-
----
 
 ### 7.3. Link do Repositório
 - [GitHub do Projeto](https://github.com/coqzieiro/site-legal-aid)

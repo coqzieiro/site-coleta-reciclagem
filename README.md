@@ -88,7 +88,7 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ### 3.4 Diagrama de Arquitetura
 
-![Diagrama de Arquitetura](images/diagrama-arquitetura.png)
+![Diagrama de Arquitetura](images/diagrama-arquitetura.jpeg)
 
 ## 4. Modelo de Classes
 
@@ -102,25 +102,25 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ### 5.1. UC - Fazer Postagem no Fórum
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+![Modelo de Comportamento](images/modelo-uc1.png)
 
 ---
 
 ### 5.2. UC - Avaliar Advogado
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+
+![Modelo de Comportamento](images/modelo-uc2.png)
 
 ---
 
 ### 5.3. UC - Validar Caso Jurídico
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
-
+![Modelo de Comportamento](images/modelo-uc3.png)
 ---
 
 ### 5.4. UC - Solicitar assistência jurídica
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+![Modelo de Comportamento](images/modelo-uc4.png)
 
 ---
 
@@ -130,28 +130,28 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 ### 6.1. UC - Fazer Postagem no Fórum
 - **Descrição**: Mostra como o sistema processa uma postagem no fórum.
 - **Diagrama de Interação**:  
-  ![Interação - Postagem no Fórum](images/interacao-postagem-forum.png)
+  ![Interação - Postagem no Fórum](images/modelo-comportamento1.png)
 
 ---
 
 ### 6.2. UC - Pedir Assistência Jurídica
 - **Descrição**: Representa o fluxo de interação entre cliente e advogado para solicitar assistência jurídica.
 - **Diagrama de Interação**:  
-  ![Interação - Assistência Jurídica](images/interacao-assistencia-juridica.png)
+   ![Interação - Postagem no Fórum](images/modelo-comportamento2.jpeg)
 
 ---
 
 ### 6.3. UC - Validar Caso Jurídico
 - **Descrição**: Explica o processo de validação de casos jurídicos enviados pelos clientes.
 - **Diagrama de Interação**:  
-  ![Interação - Validar Caso Jurídico](images/interacao-validar-caso-juridico.png)
+    ![Interação - Postagem no Fórum](images/modelo-comportamento3.jpeg)
 
 ---
 
 ### 6.4. UC - Avaliar Advogado
 - **Descrição**: Mostra como o cliente avalia um advogado e como o sistema processa essa avaliação.
 - **Diagrama de Interação**:  
-  ![Interação - Avaliar Advogado](images/interacao-avaliar-advogado.png)
+  ![Interação - Postagem no Fórum](images/modelo-comportamento4.png)
 
 ## 7. Código do Sistema
 
@@ -193,9 +193,12 @@ A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experi
 ---
 
 ### 7.2. Estrutura do Projeto
-A estrutura do projeto segue um framework de desenvolvimento organizado:
+A estrutura do projeto segue um framework de desenvolvimento organizado: <br>
+<p align="center">
+  <img src="images/codigo1.jpeg" alt="Image 1" width="45%"/>
+  <img src="images/codigo2.jpeg" alt="Image 2" width="45%"/>
+</p>
 
----
 
 ### 7.3. Link do Repositório
 - [GitHub do Projeto](https://github.com/coqzieiro/site-legal-aid)

@@ -102,15 +102,28 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ### 5.1. UC - Fazer Postagem no Fórum
 
+![Modelo de Comportamento](images/modelo-comportamento.png)
+
 ---
 
 ### 5.2. UC - Avaliar Advogado
+
+![Modelo de Comportamento](images/modelo-comportamento.png)
 
 ---
 
 ### 5.3. UC - Validar Caso Jurídico
 
+![Modelo de Comportamento](images/modelo-comportamento.png)
+
 ---
+
+### 5.4. UC - Solicitar assistência jurídica
+
+![Modelo de Comportamento](images/modelo-comportamento.png)
+
+---
+
 
 ## 6. Modelos de Interações
 

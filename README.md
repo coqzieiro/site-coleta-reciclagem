@@ -190,7 +190,6 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ![Modelo de Classes](images/modelo-classes.png)
 
----
 
 ## 5. Modelo de Comportamento
 
@@ -198,25 +197,21 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ![Modelo de Comportamento](images/modelo-uc1.png)
 
----
 
 ### 5.2. UC - Avaliar Advogado
 
 
 ![Modelo de Comportamento](images/modelo-uc2.png)
 
----
-
 ### 5.3. UC - Validar Caso Jurídico
 
 ![Modelo de Comportamento](images/modelo-uc3.png)
----
+
 
 ### 5.4. UC - Solicitar assistência jurídica
 
 ![Modelo de Comportamento](images/modelo-uc4.png)
 
----
 
 
 ## 6. Modelos de Interações
@@ -233,14 +228,12 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 - **Diagrama de Interação**:  
    ![Interação - Postagem no Fórum](images/modelo-comportamento2.jpeg)
 
----
 
 ### 6.3. UC - Validar Caso Jurídico
 - **Descrição**: Explica o processo de validação de casos jurídicos enviados pelos clientes.
 - **Diagrama de Interação**:  
     ![Interação - Postagem no Fórum](images/modelo-comportamento3.jpeg)
 
----
 
 ### 6.4. UC - Avaliar Advogado
 - **Descrição**: Mostra como o cliente avalia um advogado e como o sistema processa essa avaliação.
@@ -284,7 +277,6 @@ A escolha do Django foi baseada na necessidade de uma solução escalável e seg
 O SQLite foi selecionado pela simplicidade e facilidade de integração com o Django.
 A combinação de HTML, CSS e JavaScript garantiu um design moderno e uma experiência do usuário fluida, enquanto o uso do Node.js trouxe agilidade no desenvolvimento frontend.
 
----
 
 ### 7.2. Estrutura do Projeto
 A estrutura do projeto segue um framework de desenvolvimento organizado: <br>

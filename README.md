@@ -388,7 +388,6 @@ Exemplo de Payload:
 }
 ```
 
----
 
 #### **Backend** - `create_solicitacao` em `views.py`
 1. A view recebe os dados e cria um registro no modelo **Solicitacao**.

@@ -271,9 +271,164 @@ A estrutura do projeto segue um framework de desenvolvimento organizado: <br>
 ### 7.3. Link do Repositório
 - [GitHub do Projeto](https://github.com/coqzieiro/site-legal-aid)
 
----
 
 ### 7.4. Explicação do Código Correspondente aos Casos de Uso Desenvolvidos
+
+
+### 7.4.1 Cadastro (Cliente ou Advogado)
+
+#### **Frontend** - `Cadastro.jsx`
+1. **Passo 1**: O usuário seleciona o tipo de conta (**cliente** ou **advogado**).
+2. **Passo 2**:
+   - **Cliente**: Preenche os campos de nome, e-mail e senha.
+   - **Advogado**: Preenche os mesmos campos, adicionando o **número da licença de prática**.
+3. **Passo 3**: Cliente e advogado fornecem um número de telefone como parte final do registro.
+
+#### Funcionalidade Principal:
+- O formulário envia os dados via **POST** para o endpoint `/api/register`.
+
+```json
+Exemplo de Payload:
+{
+  "userType": "advogado",
+  "full_name": "João Silva",
+  "email": "joao@exemplo.com",
+  "password": "senha123",
+  "practice_license_number": "123456"
+}
+```
+
+
+#### **Backend** - `register_user` em `views.py`
+1. A view recebe os dados e realiza as seguintes ações:
+   - **Advogado**: Cria um objeto no modelo `Advogado`.
+   - **Cliente**: Cria um objeto no modelo `Cliente`.
+2. Verifica se o e-mail já existe antes de criar o registro.
+3. A senha é armazenada de forma segura usando **`make_password`**.
+
+**Resposta:**
+- Sucesso: Retorna mensagem com o ID do usuário.
+- Erro: Retorna mensagem indicando que o e-mail já está cadastrado.
+
+
+### 7.4.2 Login (Cliente ou Advogado)
+
+#### **Frontend** - `Login.jsx`
+1. O usuário fornece **e-mail** e **senha**.
+2. O formulário envia os dados via **POST** para o endpoint `/api/login`.
+3. Após sucesso:
+   - Salva os dados do usuário no **contexto global** (AuthContext).
+   - Redireciona o usuário para a página inicial.
+
+**Payload Enviado:**
+```json
+{
+  "email": "joao@exemplo.com",
+  "password": "senha123"
+}
+```
+
+
+#### **Backend** - `login_user` em `views.py`
+1. A view tenta autenticar o usuário:
+   - Primeiro procura na tabela `Advogado`.
+   - Se não encontrar, procura na tabela `Cliente`.
+2. A senha é validada usando **`check_password`**.
+
+**Resposta em caso de sucesso:**
+```json
+{
+  "message": "Logged in successfully!",
+  "user_id": 1,
+  "user_type": "Advogado"
+}
+```
+
+
+### 7.4.3 Solicitação de Assistência Jurídica (Cliente)
+
+#### **Frontend** - `AssistenciaJuridica.jsx`
+1. O cliente preenche um formulário com os seguintes campos:
+   - Descrição do problema jurídico.
+   - Tipo do problema (Contratos, Direito Penal, etc.).
+   - Se envolve pessoa física ou jurídica.
+   - Se há processos em andamento.
+   - Grau de urgência.
+   - Disponibilidade para consulta inicial.
+
+**Exemplo de Payload:**
+```json
+{
+  "user_id": 1,
+  "descricao": "Preciso de ajuda com um contrato de trabalho.",
+  "tipoProblema": "Direito trabalhista",
+  "envolve": "Pessoa física",
+  "processos": "False",
+  "urgencia": "Alto",
+  "consultou": "True",
+  "disponibilidade": "Segunda-feira"
+}
+```
+
+---
+
+#### **Backend** - `create_solicitacao` em `views.py`
+1. A view recebe os dados e cria um registro no modelo **Solicitacao**.
+2. Armazena o **ID do cliente solicitante** e os detalhes fornecidos no formulário.
+
+**Resposta:**
+- Sucesso: Retorna mensagem confirmando o envio da solicitação.
+- Erro: Retorna uma mensagem de erro.
+
+
+### 7.4.4 Recebimento de Caso de Assistência Jurídica (Advogado)
+
+#### **Frontend** - `VisualizarAssistencias.jsx`
+1. O advogado acessa uma página que **lista as solicitações pendentes**.
+2. A lista é carregada a partir do backend via **GET**.
+3. Cada solicitação exibe:
+   - Descrição do caso.
+   - Tipo do problema jurídico.
+   - Grau de urgência.
+   - Disponibilidade do cliente.
+
+
+#### **Backend** - `listar_solicitacoes` em `views.py`
+1. A view filtra as solicitações com status **"pendente"** no modelo **Solicitacao**.
+2. Retorna uma lista de solicitações em formato **JSON**.
+
+**Exemplo de Resposta:**
+```json
+[
+  {
+    "id": 1,
+    "descricaoSolicitacao": "Preciso de ajuda com um contrato de trabalho.",
+    "tipoProblema": "Direito trabalhista",
+    "urgencia": "Alto",
+    "disponibilidade": "Segunda-feira"
+  }
+]
+```
+
+
+### 7.4.5 Fluxo Completo do Sistema
+
+1. **Cadastro**:
+   - Clientes e advogados se cadastram através de um formulário.
+   - O backend cria registros nas tabelas apropriadas (**Cliente** ou **Advogado**).
+
+2. **Login**:
+   - O usuário fornece credenciais e o sistema valida as informações.
+   - O tipo do usuário (Cliente ou Advogado) é retornado.
+
+3. **Solicitação de Assistência Jurídica (Cliente)**:
+   - O cliente preenche o formulário e envia uma solicitação.
+   - O backend armazena a solicitação no banco de dados.
+
+4. **Visualização de Solicitações (Advogado)**:
+   - O advogado visualiza as solicitações pendentes.
+   - Pode decidir entrar em contato ou aceitar o caso.
+
 
 ## 8. DISCUSSÕES
 

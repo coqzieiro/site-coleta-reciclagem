@@ -88,7 +88,7 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ### 3.4 Diagrama de Arquitetura
 
-![Diagrama de Arquitetura](images/diagrama-arquitetura.png)
+![Diagrama de Arquitetura](images/diagrama-arquitetura.jpeg)
 
 ## 4. Modelo de Classes
 
@@ -102,25 +102,25 @@ Com base nos casos de uso feitos anteriormente, podemos identificar os seguintes
 
 ### 5.1. UC - Fazer Postagem no Fórum
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+![Modelo de Comportamento](images/modelo-uc1.png)
 
 ---
 
 ### 5.2. UC - Avaliar Advogado
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+
+![Modelo de Comportamento](images/modelo-uc2.png)
 
 ---
 
 ### 5.3. UC - Validar Caso Jurídico
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
-
+![Modelo de Comportamento](images/modelo-uc3.png)
 ---
 
 ### 5.4. UC - Solicitar assistência jurídica
 
-![Modelo de Comportamento](images/modelo-comportamento.png)
+![Modelo de Comportamento](images/modelo-uc4.png)
 
 ---
 

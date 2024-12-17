@@ -39,7 +39,77 @@ No desenvolvimento do sistema, utilizamos o Django como framework para o backend
 
 No frontend, utilizamos uma combinação de tecnologias modernas para garantir uma interface interativa e de fácil uso. O Node.js foi empregado para gerenciar dependências e criar um ambiente de desenvolvimento eficiente, enquanto o CSS foi utilizado para estilização e criação de um design responsivo, garantindo que o sistema seja acessível em diferentes dispositivos, como computadores, tablets e smartphones. O JavaScript foi responsável por implementar a interatividade do site, como validação de formulários, envio de dados para o backend de forma dinâmica (AJAX) e outras funcionalidades que melhoram a experiência do usuário. Essa combinação de ferramentas permitiu a construção de um sistema funcional, intuitivo e escalável, adequado para os objetivos do projeto.
 
+
 ## 2. Especificação de Requisitos
+
+### Cliente
+
+1. **Submeter Caso Jurídico**  
+   Como cliente que enfrenta dificuldades jurídicas e não possui recursos financeiros para contratar um advogado particular, eu gostaria de submeter meu caso jurídico na plataforma para que seja analisado por advogados voluntários, permitindo que eu receba assistência jurídica gratuita e adequada à minha situação, de forma rápida e confiável.
+
+2. **Acessar Fórum de Dúvidas**  
+   Como cliente que tem dúvidas sobre meus direitos ou procedimentos legais, eu gostaria de acessar um fórum onde pudesse postar minhas questões jurídicas, recebendo respostas de advogados voluntários que me ajudem a compreender melhor minha situação e tomar decisões informadas.
+
+3. **Acessar Perfil do Advogado**  
+   Como cliente que busca segurança e confiança no processo jurídico, eu gostaria de acessar o perfil do advogado que irá me representar, podendo visualizar informações como currículo, garantindo que ele seja qualificado para o meu caso.
+
+4. **Avaliar Atendimento Jurídico**  
+   Como cliente que valoriza a qualidade do serviço prestado, eu gostaria de poder avaliar o atendimento jurídico que recebi ao final do processo, preenchendo um formulário que permita dar feedback sobre a experiência, destacando pontos positivos e indicando melhorias.
+
+5. **Receber Notificações**  
+   Como cliente que precisa acompanhar o andamento do meu caso, eu gostaria de receber notificações automáticas da plataforma informando sobre atualizações, como a aceitação do caso por parte do advogado ou a necessidade de fornecer informações adicionais, para que eu esteja sempre ciente do progresso.
+
+
+### Advogado
+
+1. **Acessar Casos Disponíveis**  
+   Como advogado voluntário que deseja usar meus conhecimentos para ajudar pessoas, eu gostaria de acessar a lista de casos jurídicos disponíveis na plataforma, para que eu possa escolher casos em que minha atuação seja mais efetiva.
+
+2. **Validar Detalhes do Caso**  
+   Como advogado voluntário que se preocupa em oferecer um atendimento responsável e eficiente, eu gostaria de poder revisar todos os detalhes do caso jurídico submetido pelo cliente, verificando a veracidade das informações e a legitimidade do problema, antes de decidir aceitar o caso e iniciar o atendimento.
+
+3. **Responder Dúvidas no Fórum**  
+   Como advogado voluntário que deseja contribuir com a sociedade, eu gostaria de ter acesso a um espaço na plataforma onde os clientes postam dúvidas jurídicas, para que eu possa responder essas questões de forma prática e acessível, ajudando a resolver problemas mais simples que não exigem acompanhamento formal.
+
+4. **Acessar Feedback dos Clientes**  
+   Como advogado voluntário que valoriza o reconhecimento pelo trabalho realizado, eu gostaria de poder acessar o feedback fornecido pelos clientes que atendi, entendendo como meu trabalho foi percebido e utilizando essas informações para melhorar minha atuação e aumentar minha reputação na plataforma.
+
+5. **Visualizar Reputação/Ranking**  
+   Como advogado voluntário que busca expandir minha experiência e reputação, eu gostaria de poder visualizar um ranking ou pontuação dentro da plataforma, que reflita meu engajamento e a qualidade dos atendimentos realizados, ajudando-me a ganhar maior visibilidade para atrair novos casos e oportunidades.
+
+
+### 2.2 Personas
+
+#### Clóvis – Advogado Voluntário  
+Clóvis, de 22 anos, recém-formado em Direito pela UFSCar, busca colocar seus conhecimentos em prática e contribuir com a comunidade. Com interesse em causas trabalhistas, ele vê no voluntariado a oportunidade de ajudar pessoas enquanto constrói sua reputação profissional.
+
+
+#### Yuri Alberto – Jogador de Beach Tênis  
+Yuri, de 22 anos, atleta recém-contratado, enfrenta uma crise financeira devido à falta de pagamento por parte do clube. Sem recursos e com medo de confrontar o clube, Yuri busca auxílio jurídico para resolver sua situação com segurança.
+
+
+### 2.3 Diagrama de Casos de Uso
+![Diagrama de Casos de Uso](path/to/diagrama.png)  
+*(Adicione o caminho correto da imagem do diagrama aqui)*
+
+
+### 2.4 Especificação de Casos de Uso Textuais Abstratos
+
+- **Validar a Veracidade das Causas**: Advogados revisam as informações fornecidas pelos clientes e confirmam a legitimidade do problema.
+- **Advogar Causas Jurídicas**: Advogados assumem casos jurídicos, fornecendo conselhos, preparando documentos ou representando os clientes.
+- **Responder Dúvidas no Fórum**: Advogados respondem perguntas postadas pelos clientes no fórum, facilitando a resolução de problemas menores.
+- **Submeter Causas Jurídicas**: Clientes enviam detalhes do problema jurídico, anexam documentos e aguardam avaliação de um advogado.
+- **Postar Dúvidas no Fórum**: Clientes postam dúvidas no fórum para receber orientações rápidas dos advogados.
+- **Receber Orientação Jurídica**: Clientes recebem respostas e orientações jurídicas com base nos detalhes fornecidos.
+- **Fazer Feedback dos Profissionais**: Clientes avaliam o serviço dos advogados após o atendimento.
+- **Obter Feedback**: Advogados acessam avaliações e comentários deixados pelos clientes.
+- **Aumentar a Reputação/Ranking**: Advogados têm sua reputação aumentada com base no feedback positivo recebido.
+- **Receber Incentivos Fiscais**: Advogados podem obter benefícios fiscais pelo serviço voluntário.
+- **Login do Usuário**: Permite que advogados e clientes façam login na plataforma.
+- **Cadastro de Usuário**: Usuários novos se cadastram informando dados básicos.
+- **Recuperação de Senha**: Usuários podem recuperar o acesso por meio de redefinição de senha.
+
+---
 
 ## 3. Arquitetura do Sistema
 
